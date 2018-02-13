@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<div class="login-page">
+  <div class="form">
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+    
+    <!--<form action="test.php" method="POST" form class="login-form">--->
+    <form action="https://web.njit.edu/~aem39/test.php" method="POST" form class="login-form">
+      <input type="text" name="username" id="username" placeholder="Enter Your UCID"/>
+      <input type="password" name="password" id="password" placeholder="password"/>
+      <!--<button input name="post" type="submit" button type="button" input name="button" id="post" >Login</button> -->
+      <button type="button" onclick="send()">Login</button>
+	  </form>
+ </div>
+   </div>
+   <div id="test">This will change if curl is successful</div>
+   
+	<script>
+function send()
+{
+var xhttp;
+if (window.XMLHttpRequest)
+  {
+  // for newer browers
+  xhttp=new XMLHttpRequest();
+  }
+else
+  {
+  // code for njit machines
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xhttp.onreadystatechange=function()
+//readyState: 4: request finished and response is ready, status: 200: "OK"  and When readyState is 4 and status is 200, the response is ready:
+  {
+  if (this.readyState==4 && this.status==200)
+    {
+    document.getElementById("test").innerHTML=this.responseText;
+    }
+  }
+xhttp.open("POST","https://web.njit.edu/~aem39/test.php",true); //ANYTHING HERE WILL BE ECHO'd
+
+//I could use multipart/form-data here but since it is not a lot of stuff tos end, urlencoded is fine
+xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+xhttp.send("username="+encodeURIComponent(username)+"&password="+encodeURIComponent(password));
+//sends post after clicking the button
+}
+
+</script>
+
+
+
+
+</html>
