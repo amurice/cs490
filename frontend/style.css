@@ -1,0 +1,129 @@
+div{
+    color: #fff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    padding: 10px;
+}
+
+.container{
+    background-color:#CC0033;
+    display:flex;
+}
+.fixed{
+    background-color:FireBrick;
+    width: 700px;
+}
+.flex-item{
+    background-color:#ececf3;
+    flex-grow: 1;
+}
+* {
+  box-sizing: border-box;
+}
+.button {
+    background-color: #2E4272; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+body {
+    background-color: #444;
+    margin: 0;
+}
+
+#wrapper {
+     width: 1005px;
+     margin: 0 auto;
+}
+#leftcolumn, #rightcolumn {
+    border: 1px solid white;
+    float: left;
+    min-height: 450px;
+    color: white;
+}
+#leftcolumn {
+     width: 250px;
+     background-color: #111;
+}
+
+#rightcolumn {
+     width: 750px;
+     background-color: #777;
+}
+
+#wrapper {
+     width: 1005px;
+     margin: 0 auto;
+}
+#leftcolumn, #rightcolumn {
+    border: 1px solid white;
+    float: left;
+    min-height: 450px;
+    color: white;
+}
+#leftcolumn {
+     width: 250px;
+     background-color: #111;
+}
+
+#rightcolumn {
+     width: 750px;
+     background-color: #777;
+}
+
+table {
+    empty-cells: hide;
+}
+p {
+  visibility: hidden;
+}
+/*
+body {
+
+  background: #76b852; fallback for old browsers *?
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*?
+/*#tc2_label { visibility: hidden;}
+#tc3_label { visibility: hidden;}
+#tc4_label { display: none;}
+#tc5_label { display: none;}
+*/
